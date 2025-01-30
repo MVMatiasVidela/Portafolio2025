@@ -1,0 +1,35 @@
+.gradient {
+    width: 50vw; /* Ajusta el ancho basado en el viewport */
+    height: 50vh; /* Ajusta la altura basado en el viewport */
+    border-radius: 100%; /* Hacemos el borde circular */
+    transform: rotate(115deg);
+    flex-shrink: 0;
+     background: radial-gradient(
+      2762.36% 537.65% at 42.15% -275.54%,
+      rgba(44, 53, 175, 0.64) 80%,
+      rgba(39, 71, 155, 0.64) 34.4%,
+      rgba(44, 103, 171, 0.64) 49.89%,
+      rgba(46, 40, 167, 0.64) 89.4%
+    );
+    filter: blur(250px); /* Cambiar a una medida relativa */
+  }
+  
+  /* Media query para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .gradient {
+      width: 50vw;
+      height: 40vh;
+      border-radius: 50%;
+      filter: blur(20vw);
+    }
+  }
+  
+  /* Media query para pantallas muy pequeñas */
+  @media (max-width: 480px) {
+    .gradient {
+      width: 30vw;
+      height: 30vh;
+      border-radius: 50%;
+      filter: blur(20vw);
+    }
+  }
